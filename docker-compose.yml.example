@@ -1,0 +1,34 @@
+version: '3.3'
+services:
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.9.2
+    container_name: logstash
+    restart: always
+    environment:
+      - ELASTICSEARCH_HOST=es01
+      - pipeline.batch.size=125
+      - config.reload.automatic=true
+      - queue.type=persisted
+      - "LS_JAVA_OPTS:-Xmx4g-Xms4g"
+    ports:
+      - 5044:5044
+      - 5045:5045
+      - 6050:6050
+    volumes:
+      -  /usr/share/logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
+      -  /usr/share/logstash/configs:/usr/share/logstash/configs:ro
+      -  /usr/share/logstash/plugins/translate:/opt/elastic_stack/logstash/translate:ro
+      -  /usr/share/logstash/rules:/etc/nsm/rules:ro
+      -  /usr/share/logstash/persistent_data:/usr/share/logstash/data
+      -  /usr/share/logstash/dictionaries:/etc/logstash/dictionaries:ro
+    networks:
+      - esnet
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+networks:
+  esnet:
+    driver: bridge
+
