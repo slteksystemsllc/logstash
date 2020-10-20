@@ -18,7 +18,9 @@ paste the following into your text editor (vim in this case)
 
 ```
 input {
-  stdin {}
+  stdin {
+      
+  }
 }
 output {
   stdout {
