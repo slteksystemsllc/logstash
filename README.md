@@ -30,6 +30,7 @@ sudo wget https://raw.githubusercontent.com/slteksystemsllc/Logstash-only/main/s
 
 # Navigate to /usr/share/logstash/ and run the following command.  This will start the stack in daemon mode.
 cd /usr/share/logstash/
+
 sudo docker-compose up -d
 
 
