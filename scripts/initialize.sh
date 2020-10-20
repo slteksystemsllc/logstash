@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /opt/
 
-git clone https://github.com/slteksystemsllc/Logstash-only.git
+git clone https://github.com/slteksystemsllc/logstash.git
 
 #########################################################
 # Logstash Pre-Config 
