@@ -11,8 +11,10 @@ sudo docker run -it --rm docker.elastic.co/elasticsearch/elasticsearch:7.9.2 -f 
 Example logstash.conf test file for pasting logs into logstash and seeing output on screen.  Copy the following text into a file 
 ```
 sudo vi logstash.conf 
-paste the follwing into your text editor (vim in this case)
+```
+paste the following into your text editor (vim in this case)
 
+```
 input {
   stdin {}
 }
