@@ -19,11 +19,11 @@ mkdir -p /usr/share/logstash/rules/
 
 sudo chown 1000:1000 -R /usr/share/logstash/
 
-cp -r /opt/Logstash-only/logstash/logstash_configs/* /usr/share/logstash/configs/
-cp -r /opt/Logstash-only/logstash/dictionaries/* /usr/share/logstash/dictionaries/
-cp -f /opt/Logstash-only/logstash/pipelines.yml.example /usr/share/logstash/config/pipelines.yml
-cp -r /opt/Logstash-only/logstash/rules/* /usr/share/logstash/rules/
+cp -r /opt/logstash/logstash/logstash_configs/* /usr/share/logstash/configs/
+cp -r /opt/logstashlogstash/dictionaries/* /usr/share/logstash/dictionaries/
+cp -f /opt/logstash/logstash/pipelines.yml.example /usr/share/logstash/config/pipelines.yml
+cp -r /opt/logstash/logstash/rules/* /usr/share/logstash/rules/
 
-cd /usr/share/logstash/
+cd /usr/share/logstash/logstash/
 
 docker-compose up --no-start
