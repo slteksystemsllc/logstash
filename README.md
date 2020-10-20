@@ -15,7 +15,6 @@ Assume you have a copy of Ubuntu 18.04 minimum insatalled.  Have not tested this
 # Once Ubuntu is insalled run update and upgrade commands to update system
 sudo apt-get update && sudo apt-get upgrade
 
-
 # Install wget
 sudo apt-get install -y wget
 
@@ -32,6 +31,13 @@ sudo wget https://raw.githubusercontent.com/slteksystemsllc/logstash/main/script
 cd /usr/share/logstash/
 
 sudo docker-compose up -d
+
+## Or download this script and execute to do everything listed above in one shot
+
+sudo wget https://raw.githubusercontent.com/slteksystemsllc/logstash/main/automated_install.sh
+
+ sudo bash automated_install.sh
+
 
 
 ```
