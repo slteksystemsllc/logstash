@@ -36,7 +36,7 @@ sudo docker-compose up -d
 
 sudo wget https://raw.githubusercontent.com/slteksystemsllc/logstash/main/automated_install.sh
 
- sudo bash automated_install.sh
+sudo bash automated_install.sh
 
 
 
