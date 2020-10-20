@@ -75,6 +75,3 @@ sudo wget https://raw.githubusercontent.com/slteksystemsllc/logstash/main/automa
 ```
 sudo bash automated_install.sh
 ```
-
-
-```
