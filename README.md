@@ -23,10 +23,10 @@ sudo apt-get install -y wget
 cd /opt
 
 # Download the prerequisites script and run in bash
-sudo wget https://raw.githubusercontent.com/slteksystemsllc/Logstash-only/main/scripts/prereq.sh && sudo bash prereq.sh
+sudo wget https://raw.githubusercontent.com/slteksystemsllc/logstash/main/scripts/prereq.sh && sudo bash prereq.sh
 
 # Download the initialization script and run in bash
-sudo wget https://raw.githubusercontent.com/slteksystemsllc/Logstash-only/main/scripts/initialize.sh && sudo bash initialize.sh
+sudo wget https://raw.githubusercontent.com/slteksystemsllc/logstash/main/scripts/initialize.sh && sudo bash initialize.sh
 
 # Navigate to /usr/share/logstash/ and run the following command.  This will start the stack in daemon mode.
 cd /usr/share/logstash/
