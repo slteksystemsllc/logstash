@@ -7,7 +7,7 @@ If you wish to just run a single container not utilizing he docker-compose.yml y
 sudo docker pull docker.elastic.co/logstash/logstash:7.9.2
 ```
 ```
-sudo docker run -it --rm docker.elastic.co/elasticsearch/elasticsearch:7.9.2 -f /opt/logstash.conf (replace logstash.conf with your logstash test config)
+sudo docker run -it --rm -v /opt/logstash.conf:/opt/logstash.conf docker.elastic.co/elasticsearch/elasticsearch:7.9.2 -f /opt/logstash.conf (replace logstash.conf with your logstash test config)
 ```
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Example logstash.conf test file for pasting logs into logstash and seeing output on screen.  Copy the following text into a file 
