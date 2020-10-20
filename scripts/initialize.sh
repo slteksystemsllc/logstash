@@ -24,6 +24,6 @@ cp -r /opt/logstashlogstash/dictionaries/* /usr/share/logstash/dictionaries/
 cp -f /opt/logstash/logstash/pipelines.yml.example /usr/share/logstash/config/pipelines.yml
 cp -r /opt/logstash/logstash/rules/* /usr/share/logstash/rules/
 
-cd /usr/share/logstash/logstash/
+cd /usr/share/logstash/
 
 docker-compose up --no-start
