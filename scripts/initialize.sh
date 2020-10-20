@@ -23,6 +23,7 @@ cp -r /opt/logstash/logstash/logstash_configs/* /usr/share/logstash/configs/
 cp -r /opt/logstashlogstash/dictionaries/* /usr/share/logstash/dictionaries/
 cp -f /opt/logstash/logstash/pipelines.yml.example /usr/share/logstash/config/pipelines.yml
 cp -r /opt/logstash/logstash/rules/* /usr/share/logstash/rules/
+cp -f /opt/logstash/docker-compose.yml.example /usr/share/logstash/docker-compose.yml
 
 cd /usr/share/logstash/
 
