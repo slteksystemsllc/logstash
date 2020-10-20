@@ -3,10 +3,12 @@
 This is will install a Logstash docker container inside Ubuntu for configuration testing prior to moving configs into production.  You can run this and test pipelines and configs to verify they work the way you expect prior to migrating into a rpoduction system. 
 
 If you wish to just run a single container not utilizing he docker-compose.yml you can do so as well by doing something like this
-
-sudo docker pull docker.elastic.co/elasticsearch/elasticsearch:7.9.2
-
+```
+sudo docker pull docker.elastic.co/logstash/logstash:7.9.2
+```
+```
 sudo docker run -it --rm docker.elastic.co/elasticsearch/elasticsearch:7.9.2 -f /opt/logstash.conf (replace logstash.conf with your logstash test config)
+```
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Example logstash.conf test file for pasting logs into logstash and seeing output on screen.  Copy the following text into a file 
 ```
@@ -27,7 +29,8 @@ output {
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Than run the config with logstash in the conatiner using the following command
 ```
-sudo docker run -it --rm docker.elastic.co/elasticsearch/elasticsearch:7.9.2 -f /opt/logstash.conf
+sudo docker run -it --rm docker.elastic.co/logstash/logstash:7.9.2
+ -f /opt/logstash.conf
 ```
 This is really only for quick test etc.  
 
