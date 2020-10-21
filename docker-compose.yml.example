@@ -5,7 +5,6 @@ services:
     container_name: logstash
     restart: always
     environment:
-      - ELASTICSEARCH_HOST=es01
       - pipeline.batch.size=125
       - config.reload.automatic=true
       - queue.type=persisted
