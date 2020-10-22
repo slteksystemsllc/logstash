@@ -47,7 +47,7 @@ Assume you have a copy of Ubuntu 18.04 minimum insatalled.  Have not tested this
 
 # Once Ubuntu is insalled run update and upgrade commands to update system
 ```
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 ```
 # Install wget
 ```
